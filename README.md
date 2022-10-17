@@ -1,7 +1,7 @@
 # turtlebot3_blockly
 This is a modified version of the official [dabit-industries/turtlebot3_blockly](https://github.com/dabit-industries/turtlebot3_blockly) repository, which again is a fork of the private [aravindk2604/turtlebot3_blockly](https://github.com/aravindk2604/turtlebot3_blockly) repo, which was based on the 
 [erlerobot/robot_blockly](https://github.com/erlerobot/robot_blockly.git) repo. 
-There are two changes. Some modifications in the frontend/blockly submodule, so that the 'seconds' parameters (how long a block should run) is correctly used. Another modification is that this code is tested on a ROS Melodic system -  Ubuntu 18.04, with improved documentation.
+There are two changes. Some modifications in the frontend/blockly submodule, so that the 'seconds' parameter (how long a block should run) is correctly used. Another modification is that this code is tested on a ROS Melodic system -  Ubuntu 18.04, with improved documentation.
 
 You can now control TurtleBot3 using Blockly - drag and drop software developed by Google.
 
