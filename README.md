@@ -17,6 +17,14 @@ You can now control TurtleBot3 using Blockly - drag and drop software developed 
 python2.7 -m pip install --upgrade pip
 python2.7 -m pip install autobahn
 python2.7 -m pip install MAVProxy
+
+python3.6 -m pip install cryptography==36.0.2 autobahn
+
+sudo apt-get install curl gnupg2 lsb-release
+sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
+
+sudo apt-get install ros-melodic-catkin
 sudo apt-get install ros-melodic-mavros ros-melodic-mavros-extras
 sudo apt-get install ros-melodic-turtlebot3-teleop
 ```
@@ -28,6 +36,7 @@ mkdir -p ~/blockly_ws/src
 cd ~/blockly_ws/src
 git clone https://github.com/physar/turtlebot3_blockly.git
 cd ~/blockly_ws/
+source /opt/ros/melodic/setup.bash
 catkin_make_isolated -j2 --pkg turtlebot3_blockly --install
 ```
 
@@ -35,7 +44,7 @@ catkin_make_isolated -j2 --pkg turtlebot3_blockly --install
 
 ```
 cd ~/blockly_ws
-source devel_isolated/setup.bash
+source install_isolated/setup.bash
 roslaunch turtlebot3_blockly turtlebot3_blockly.launch
 ```
 
